@@ -11,7 +11,7 @@
 /* rgb(188, 113, 152),	329°, 36%, 59% */
 /* rgb(90, 119, 255)	229°, 100%, 67% */
 
-body {
+/* body {
   background: rgb(255, 197, 147);
   background: linear-gradient(
     13deg,
@@ -19,7 +19,7 @@ body {
     rgba(188, 113, 152, 1) 59%,
     rgba(90, 119, 255, 1) 67%
   );
-}
+} */
 
 * {
   margin: 0;
@@ -67,4 +67,160 @@ p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
+}
+
+/* navigation */
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 2.8rem;
+}
+
+.nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 3.7rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* main banner */
+
+.section-create {
+  display: flex;
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+.section-create-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-color: var(--pure-black);
+  color: var(--white);
+  padding: 0 11rem;
+}
+
+.section-create-img {
+  width: 60%;
+}
+
+.section-create-img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* section-stories */
+
+.section-stories {
+  display: flex;
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+.section-stories-img {
+  width: 60%;
+}
+
+.section-stories-img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.section-stories-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 11rem;
+}
+
+/* section-design */
+
+.section-design {
+  display: flex;
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+.section-design-text {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 11rem;
+}
+
+.section-design-img {
+  width: 60%;
+}
+
+.section-design-img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* section-stories-list */
+
+.section-stories-list {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-stories-list div {
+  width: 25%;
+  height: auto;
+  color: var(--white);
+
+  width: 100%;
+}
+
+.mountains {
+  background: url("./assets/stories/desktop/mountains.jpg");
+  background-size: cover;
+  padding-top: 26.5%;
+  padding-left: 4rem;
+}
+
+.cityscapes {
+  background: url("./assets/stories/desktop/cityscapes.jpg");
+  background-size: cover;
+  padding-top: 26.5%;
+  padding-left: 4rem;
+}
+
+.voyage {
+  background: url("./assets/stories/desktop/18-days-voyage.jpg");
+  background-size: cover;
+  padding-top: 26.5%;
+  padding-left: 4rem;
+}
+
+.architecturals {
+  background: url("./assets/stories/desktop/architecturals.jpg");
+  background-size: cover;
+  padding-top: 26.5%;
+  padding-left: 4rem;
 }
