@@ -2,6 +2,12 @@ import PageNav from "../components/PageNav";
 import desktopCreate from "../assets/home/desktop/create-and-share.jpg";
 import desktopStories from "../assets/home/desktop/beautiful-stories.jpg";
 import desktopDesign from "../assets/home/desktop/designed-for-everyone.jpg";
+// Icons
+import responsive from "../assets/features/desktop/responsive.svg";
+import noLimit from "../assets/features/desktop/no-limit.svg";
+import embed from "../assets/features/desktop/embed.svg";
+import Footer from "../components/Footer";
+import logo from "../assets/shared/desktop/logo.svg";
 
 function Homepage() {
   return (
@@ -88,24 +94,24 @@ function Homepage() {
       </div>
 
       <div className="section-features">
-        <div>
-          <img></img>
+        <div className="feature">
+          <img src={responsive} alt="proba" />
           <h1>100% Responsive</h1>
           <p>
             No matter which the device you’re on, our site is fully responsive
             and stories look beautiful on any screen.
           </p>
         </div>
-        <div>
-          <img></img>
+        <div className="feature">
+          <img src={noLimit} alt="proba" />
           <h1>No Photo Upload Limit</h1>
           <p>
             Our tool has no limits on uploads or bandwidth. Freely upload in
             bulk and share all of your stories in one go.
           </p>
         </div>
-        <div>
-          <img></img>
+        <div className="feature">
+          <img src={embed} alt="proba" />
           <h1>Available to Embed</h1>
           <p>
             Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
@@ -114,7 +120,7 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="footer"></div>
+      <Footer />
     </div>
   );
 }
