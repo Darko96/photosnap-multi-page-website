@@ -20,7 +20,7 @@ function PageNav() {
         </li>
       </ul>
 
-      <button>Get an invite</button>
+      <button className="nav-btn">Get an invite</button>
     </nav>
   );
 }

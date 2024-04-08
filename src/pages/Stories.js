@@ -1,169 +1,175 @@
 import Footer from "../components/Footer";
 import PageNav from "../components/PageNav";
 
+import arrow from "../assets/shared/desktop/arrow.svg";
+
 function Stories() {
   return (
     <div className="stories-container">
       <PageNav />
 
       <div className="section-stories-banner">
-        <p>Last month's featured story</p>
-        <h1>Hazy full moon of Appalachia</h1>
-        <p>
-          March 2nd 2020 <span>by John Appleseed</span>
-        </p>
-        <p>
-          The dissected plateau area, while not actually made up of geological
-          mountains, is popularly called "mountains," especially in eastern
-          Kentucky and West Virginia, and while the ridges are not high, the
-          terrain is extremely rugged.
-        </p>
-        <button>Read the story</button>
+        <div className="section-container">
+          <p className="stories-above-heading">Last month's featured story</p>
+          <h1 className="stories-heading">Hazy full moon of Appalachia</h1>
+          <p className="below-stories-heading">
+            March 2nd 2020 <span className="proba">by John Appleseed</span>
+          </p>
+          <p className="stories-banner-text">
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </p>
+          <button className="stories-banner-btn">
+            Read the story <img src={arrow} alt="proba" />
+          </button>
+        </div>
       </div>
 
       <div className="section-stories-gallery">
-        <div className="mountains">
-          <div>
-            <p>April 16th 2020</p>
-            <p>The Mountains</p>
-            <p>by John Appleseed</p>
+        <div className="gallery-item mountains">
+          <div className="gallery-text">
+            <p className="date">April 16th 2020</p>
+            <p className="topic">The Mountains</p>
+            <p className="name">by John Appleseed</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="cityscapes">
-          <div>
-            <p>April 14th 2020</p>
-            <p>Sunset Cityscapes</p>
-            <p>by Benjamin Cruz</p>
+        <div className="gallery-item cityscapes">
+          <div className="gallery-text">
+            <p className="date">April 14th 2020</p>
+            <p className="topic">Sunset Cityscapes</p>
+            <p className="name">by Benjamin Cruz</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="voyage">
-          <div>
-            <p>April 11th 2020</p>
-            <p>18 Days Voyage</p>
-            <p>by Alexei Borodin</p>
+        <div className="gallery-item voyage">
+          <div className="gallery-text">
+            <p className="date">April 11th 2020</p>
+            <p className="topic">18 Days Voyage</p>
+            <p className="name">by Alexei Borodin</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="architecturals">
-          <div>
-            <p>April 9th 2020</p>
-            <p>Architecturals</p>
-            <p>by Samantha Brooke</p>
+        <div className="gallery-item architecturals">
+          <div className="gallery-text">
+            <p className="date">April 9th 2020</p>
+            <p className="topic">Architecturals</p>
+            <p className="name">by Samantha Brooke</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="tour">
-          <div>
-            <p>April 7th 2020</p>
-            <p>World Tour 2019</p>
-            <p>by Timothy Wagner</p>
+        <div className="gallery-item tour">
+          <div className="gallery-text">
+            <p className="date">April 7th 2020</p>
+            <p className="topic">World Tour 2019</p>
+            <p className="name">by Timothy Wagner</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="corners">
-          <div>
-            <p>April 3rd 2020</p>
-            <p>Unforeseen Corners</p>
-            <p>by William Malcolm</p>
+        <div className="gallery-item corners">
+          <div className="gallery-text">
+            <p className="date">April 3rd 2020</p>
+            <p className="topic">Unforeseen Corners</p>
+            <p className="name">by William Malcolm</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="africa">
-          <div>
-            <p>March 29th 2020</p>
-            <p>King on Africa: Part II</p>
-            <p>by Tim Hillenburg</p>
+        <div className="gallery-item africa">
+          <div className="gallery-text">
+            <p className="date">March 29th 2020</p>
+            <p className="topic">King on Africa: Part II</p>
+            <p className="name">by Tim Hillenburg</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="nowhere">
-          <div>
-            <p>March 21st 2020</p>
-            <p>The Trip to Nowhere</p>
-            <p>by Felicia Rourke</p>
+        <div className="gallery-item nowhere">
+          <div className="gallery-text">
+            <p className="date">March 21st 2020</p>
+            <p className="topic">The Trip to Nowhere</p>
+            <p className="name">by Felicia Rourke</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="sea">
-          <div>
-            <p>March 19th 2020</p>
-            <p>Rage of The Sea</p>
-            <p>by Mohammed Abdul</p>
+        <div className="gallery-item sea">
+          <div className="gallery-text">
+            <p className="date">March 19th 2020</p>
+            <p className="topic">Rage of The Sea</p>
+            <p className="name">by Mohammed Abdul</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="running">
-          <div>
-            <p>March 16th 2020</p>
-            <p>Running Free</p>
-            <p>by Michelle</p>
+        <div className="gallery-item running">
+          <div className="gallery-text">
+            <p className="date">March 16th 2020</p>
+            <p className="topic">Running Free</p>
+            <p className="name">by Michelle</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="waves">
-          <div>
-            <p>March 11th 2020</p>
-            <p>Behind the Waves</p>
-            <p>by Lamarr Wilson</p>
+        <div className="gallery-item waves">
+          <div className="gallery-text">
+            <p className="date">March 11th 2020</p>
+            <p className="topic">Behind the Waves</p>
+            <p className="name">by Lamarr Wilson</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="waters">
-          <div>
-            <p>March 9th 2020</p>
-            <p>Calm Waters</p>
-            <p>by Samantha Brooke</p>
+        <div className="gallery-item waters">
+          <div className="gallery-text">
+            <p className="date">March 9th 2020</p>
+            <p className="topic">Calm Waters</p>
+            <p className="name">by Samantha Brooke</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="milky">
-          <div>
-            <p>March 5th 2020</p>
-            <p>The Milky Way</p>
-            <p>by Benjamin Cruz</p>
+        <div className="gallery-item milky">
+          <div className="gallery-text">
+            <p className="date">March 5th 2020</p>
+            <p className="topic">The Milky Way</p>
+            <p className="name">by Benjamin Cruz</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="forest">
-          <div>
-            <p>March 4th 2020</p>
-            <p>Night at The Dark Forest</p>
-            <p>by Mohammed Abdul</p>
+        <div className="gallery-item forest">
+          <div className="gallery-text">
+            <p className="date">March 4th 2020</p>
+            <p className="topic">Night at The Dark Forest</p>
+            <p className="name">by Mohammed Abdul</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="beauty">
-          <div>
-            <p>March 1st 2020</p>
-            <p>Somwarpet’s Beauty</p>
-            <p>by Michelle</p>
+        <div className="gallery-item beauty">
+          <div className="gallery-text">
+            <p className="date">March 1st 2020</p>
+            <p className="topic">Somwarpet’s Beauty</p>
+            <p className="name">by Michelle</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
 
-        <div className="dreams">
-          <div>
-            <p>February 25th 2020</p>
-            <p>Land of Dreams</p>
-            <p>by William Malcolm</p>
+        <div className="gallery-item dreams">
+          <div className="gallery-text">
+            <p className="date">February 25th 2020</p>
+            <p className="topic">Land of Dreams</p>
+            <p className="name">by William Malcolm</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">Read Story</button>
         </div>
       </div>
 

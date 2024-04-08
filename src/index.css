@@ -80,7 +80,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
 
-  padding: 2.8rem;
+  padding: 1.6rem;
 }
 
 .nav-list {
@@ -90,9 +90,29 @@ p {
   gap: 3.7rem;
 }
 
+.nav-list li {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
 .nav-list a {
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--pure-black);
+}
+
+.nav-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: var(--white);
+  background-color: var(--pure-black);
+  border: none;
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 /* main banner */
@@ -113,6 +133,40 @@ p {
   background-color: var(--pure-black);
   color: var(--white);
   padding: 0 11rem;
+}
+
+.section-create-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 2.1rem;
+}
+
+.section-create-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-bottom: 4.8rem;
+  opacity: 0.6;
+}
+
+.section-create-text button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+
+  cursor: pointer;
 }
 
 .section-create-img {
@@ -150,6 +204,40 @@ p {
   padding: 0 11rem;
 }
 
+.section-stories-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 2.1rem;
+}
+
+.section-stories-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-bottom: 4.8rem;
+  opacity: 0.6;
+}
+
+.section-stories-text button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--pure-black);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+
+  cursor: pointer;
+}
+
 /* section-design */
 
 .section-design {
@@ -166,6 +254,40 @@ p {
   align-items: flex-start;
   justify-content: center;
   padding: 0 11rem;
+}
+
+.section-design-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 2.1rem;
+}
+
+.section-design-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-bottom: 4.8rem;
+  opacity: 0.6;
+}
+
+.section-design-text button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--pure-black);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+
+  cursor: pointer;
 }
 
 .section-design-img {
@@ -189,9 +311,45 @@ p {
   justify-content: center;
 }
 
-.section-stories-list div {
+.storie-item {
   color: var(--white);
   width: 100%;
+
+  padding-bottom: 4rem;
+}
+
+.topic {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  margin-bottom: 1.6rem;
+}
+
+.stories-text {
+  width: 90%;
+  border-bottom: 0.1rem solid var(--white);
+  margin-bottom: 2rem;
+}
+
+.stories-btn {
+  width: 90%;
+  border: none;
+  background: none;
+  color: var(--white);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
 }
 
 .mountains {
@@ -229,10 +387,13 @@ p {
   margin: 0 auto;
   max-width: 111rem;
 
+  padding: 12rem 0;
+  text-align: center;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 12rem;
+  gap: 3rem;
+  color: var(--pure-black);
 }
 
 .feature {
@@ -240,6 +401,27 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.feature img {
+  margin-bottom: 4.8rem;
+}
+
+.middle img {
+  margin-bottom: 8.8rem;
+}
+
+.feature h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+  opacity: 0.6;
 }
 
 /* footer */
@@ -278,6 +460,11 @@ p {
 .footer-links {
   grid-row: 2/3;
   grid-column: 1/2;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.3rem;
 }
 
 .footer-social {
@@ -292,14 +479,52 @@ p {
   gap: 1.9rem;
 }
 
+.footer-social ul li {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.footer-social ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .footer-invite {
   grid-row: 1/2;
   grid-column: 4/5;
 }
 
+.footer-invite button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  background: none;
+  border: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
 .footer-copyright {
   grid-row: 2/3;
   grid-column: 4/5;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 /* section-stories-banner */
@@ -311,9 +536,125 @@ p {
   background: url("./assets/stories/desktop/moon-of-appalacia.jpg");
   background-size: cover;
   padding-top: 25%;
+  padding-bottom: 12rem;
+
+  color: var(--white);
+}
+
+.section-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.stories-above-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  margin-bottom: 2.4rem;
+}
+
+.stories-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 1.6rem;
+}
+
+.below-stories-heading {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  opacity: 0.6;
+
+  margin-bottom: 2.4rem;
+}
+
+.below-stories-heading .proba {
+  opacity: 1;
+}
+
+.stories-banner-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  opacity: 0.6;
+
+  margin-bottom: 2.4rem;
+}
+
+.stories-banner-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  background: none;
+  border: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 /* section-stories-gallery */
+
+.section-stories-list {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gallery-item {
+  color: var(--white);
+  width: 100%;
+
+  padding-bottom: 4rem;
+}
+
+.topic {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  margin-bottom: 1.6rem;
+}
+
+.gallery-text {
+  width: 90%;
+  border-bottom: 0.1rem solid var(--white);
+  margin-bottom: 2rem;
+}
+
+.stories-btn {
+  width: 90%;
+  border: none;
+  background: none;
+  color: var(--white);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
 
 .section-stories-gallery {
   width: 100%;
@@ -344,7 +685,7 @@ p {
 
 .section-stories-gallery div button {
   display: block;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .tour {
@@ -393,4 +734,127 @@ p {
 
 .dreams {
   background: url("./assets/stories/desktop/land-of-dreams.jpg");
+}
+
+/* features */
+
+.features-banner {
+  display: flex;
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+.features-banner-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-color: var(--pure-black);
+  color: var(--white);
+  padding: 0 11rem;
+}
+
+.features-banner-img {
+  width: 60%;
+}
+
+.features-banner-img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.section-invite {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 144rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6.8rem 0;
+
+  background: url("./assets/shared/desktop/bg-beta.jpg");
+}
+
+.section-invite-heading {
+  width: 30%;
+}
+
+/* pricing */
+
+.pricing-banner {
+  display: flex;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  margin-bottom: 12rem;
+}
+
+.pricing-banner-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-color: var(--pure-black);
+  color: var(--white);
+  padding: 0 11rem;
+}
+
+.pricing-banner-img {
+  width: 60%;
+}
+
+.pricing-banner-img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.section-pricing {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 144rem;
+
+  text-align: center;
+
+  margin-bottom: 16rem;
+}
+
+.monthly-yearly-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-box {
+  display: flex;
+}
+
+.pricing-basic {
+}
+
+.pricing-pro {
+}
+
+.pricing-business {
+}
+
+.section-compare {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 73rem;
+}
+
+.section-compare div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.compare-heading {
+  text-align: center;
+  margin-bottom: 5.6rem;
 }

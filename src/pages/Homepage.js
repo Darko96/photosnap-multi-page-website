@@ -8,6 +8,8 @@ import noLimit from "../assets/features/desktop/no-limit.svg";
 import embed from "../assets/features/desktop/embed.svg";
 import Footer from "../components/Footer";
 import logo from "../assets/shared/desktop/logo.svg";
+import arrow from "../assets/shared/desktop/arrow.svg";
+import arrowBlack from "../assets/shared/desktop/arrowBlack.svg";
 
 function Homepage() {
   return (
@@ -22,7 +24,9 @@ function Homepage() {
             We make it easy to share photos, tell stories and connect with
             others.
           </p>
-          <button>Get an ivnite</button>
+          <button>
+            Get an ivnite <img src={arrow} alt="proba" />
+          </button>
         </div>
         <div className="section-create-img">
           <img src={desktopCreate} alt="proba"></img>
@@ -40,7 +44,9 @@ function Homepage() {
             Easily add photos, text, embed maps and media from other networks.
             Then share your story with everyone.
           </p>
-          <button>View the stories</button>
+          <button>
+            View the stories <img src={arrowBlack} alt="proba" />
+          </button>
         </div>
       </div>
 
@@ -52,7 +58,9 @@ function Homepage() {
             audience. Our tool is designed for photographers of all levels,
             brands, businesses you name it.
           </p>
-          <button>View the stories</button>
+          <button>
+            View the stories <img src={arrowBlack} alt="proba" />{" "}
+          </button>
         </div>
         <div className="section-design-img">
           <img src={desktopDesign} alt="proba"></img>
@@ -60,40 +68,48 @@ function Homepage() {
       </div>
 
       <div className="section-stories-list">
-        <div className="mountains">
-          <div>
-            <p>The Mountains</p>
-            <p>by John Appleseed</p>
+        <div className="mountains storie-item">
+          <div className="stories-text">
+            <p className="topic">The Mountains</p>
+            <p className="name">by John Appleseed</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
-        <div className="cityscapes">
-          <div>
-            <p>Sunset Cityscapes</p>
-            <p>by Benjamin Cruz</p>
+        <div className="cityscapes storie-item">
+          <div className="stories-text">
+            <p className="topic">Sunset Cityscapes</p>
+            <p className="name">by Benjamin Cruz</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
-        <div className="voyage">
-          <div>
-            <p>18 Days Voyage</p>
-            <p>by Alexei Borodin</p>
+        <div className="voyage storie-item">
+          <div className="stories-text">
+            <p className="topic">18 Days Voyage</p>
+            <p className="name">by Alexei Borodin</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
-        <div className="architecturals">
-          <div>
-            <p>Architecturals</p>
-            <p>by Samantha Brooke</p>
+        <div className="architecturals storie-item">
+          <div className="stories-text">
+            <p className="topic">Architecturals</p>
+            <p className="name">by Samantha Brooke</p>
           </div>
-          <button>Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
       </div>
 
-      <div className="section-features">
+      <div className="section-features storie-item">
         <div className="feature">
           <img src={responsive} alt="proba" />
           <h1>100% Responsive</h1>
@@ -102,7 +118,7 @@ function Homepage() {
             and stories look beautiful on any screen.
           </p>
         </div>
-        <div className="feature">
+        <div className="feature middle">
           <img src={noLimit} alt="proba" />
           <h1>No Photo Upload Limit</h1>
           <p>
