@@ -390,15 +390,21 @@ p {
   padding: 12rem 0;
   text-align: center;
 
+  color: var(--pure-black);
+
   display: flex;
   align-items: center;
-  gap: 3rem;
-  color: var(--pure-black);
+  justify-content: center;
 }
 
-.feature {
+.wrap {
+  flex-wrap: wrap;
+}
+
+.row-one,
+.row-two {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -429,14 +435,20 @@ p {
   background-color: var(--pure-black);
   color: var(--white);
 
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-rows: 33.3% 33.3% 33.3%;
-  grid-template-columns: 18% 10% 38% 30%;
-  row-gap: 8.4rem;
-
   padding: 6.4rem;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110.4rem;
+
+  display: grid;
+  align-content: flex-start;
+  justify-items: flex-end;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 20% 18% 27.3% 30%;
+  row-gap: 8.4rem;
 }
 
 .footer-invite button {
@@ -465,6 +477,8 @@ p {
   align-items: center;
   justify-content: flex-start;
   gap: 1.3rem;
+
+  cursor: pointer;
 }
 
 .footer-social {
@@ -496,6 +510,8 @@ p {
 .footer-invite {
   grid-row: 1/2;
   grid-column: 4/5;
+
+  justify-self: flex-end;
 }
 
 .footer-invite button {
@@ -525,6 +541,8 @@ p {
   font-size: 1.5rem;
   font-weight: 400;
   opacity: 0.5;
+
+  justify-self: flex-end;
 }
 
 /* section-stories-banner */
@@ -618,8 +636,10 @@ p {
 .gallery-item {
   color: var(--white);
   width: 100%;
-
   padding-bottom: 4rem;
+
+  display: flex;
+  justify-content: flex-start;
 }
 
 .topic {
@@ -636,19 +656,22 @@ p {
   margin-bottom: 1.6rem;
 }
 
-.gallery-text {
+.gallery-item .gallery-text {
   width: 90%;
   border-bottom: 0.1rem solid var(--white);
+
+  padding-left: 0;
   margin-bottom: 2rem;
 }
 
-.stories-btn {
+.gallery-item .stories-btn {
   width: 90%;
   border: none;
   background: none;
   color: var(--white);
   text-transform: uppercase;
 
+  text-align: start;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -676,7 +699,6 @@ p {
 
   padding-top: 17.2%;
   padding-left: 2rem;
-  padding-bottom: 4rem;
 }
 
 .section-stories-gallery div div {
@@ -756,6 +778,20 @@ p {
   padding: 0 11rem;
 }
 
+.features-banner-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 2.1rem;
+}
+
+.features-banner-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
 .features-banner-img {
   width: 60%;
 }
@@ -776,10 +812,47 @@ p {
   padding: 6.8rem 0;
 
   background: url("./assets/shared/desktop/bg-beta.jpg");
+  background-size: cover;
+
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0.6rem;
+  border-style: solid;
+  border-image: linear-gradient(
+    13deg,
+    rgba(255, 197, 147, 1) 79%,
+    rgba(188, 113, 152, 1) 59%,
+    rgba(90, 119, 255, 1) 67%
+  );
+  border-image-slice: 1;
 }
 
 .section-invite-heading {
-  width: 30%;
+  width: 26%;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.section-invite-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+
+  cursor: pointer;
 }
 
 /* pricing */

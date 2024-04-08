@@ -34,7 +34,9 @@ function Stories() {
             <p className="topic">The Mountains</p>
             <p className="name">by John Appleseed</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item cityscapes">
@@ -43,7 +45,9 @@ function Stories() {
             <p className="topic">Sunset Cityscapes</p>
             <p className="name">by Benjamin Cruz</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item voyage">
@@ -52,7 +56,9 @@ function Stories() {
             <p className="topic">18 Days Voyage</p>
             <p className="name">by Alexei Borodin</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item architecturals">
@@ -61,7 +67,9 @@ function Stories() {
             <p className="topic">Architecturals</p>
             <p className="name">by Samantha Brooke</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item tour">
@@ -70,7 +78,9 @@ function Stories() {
             <p className="topic">World Tour 2019</p>
             <p className="name">by Timothy Wagner</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item corners">
@@ -79,7 +89,9 @@ function Stories() {
             <p className="topic">Unforeseen Corners</p>
             <p className="name">by William Malcolm</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item africa">
@@ -88,7 +100,9 @@ function Stories() {
             <p className="topic">King on Africa: Part II</p>
             <p className="name">by Tim Hillenburg</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item nowhere">
@@ -97,7 +111,9 @@ function Stories() {
             <p className="topic">The Trip to Nowhere</p>
             <p className="name">by Felicia Rourke</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item sea">
@@ -106,7 +122,9 @@ function Stories() {
             <p className="topic">Rage of The Sea</p>
             <p className="name">by Mohammed Abdul</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item running">
@@ -115,7 +133,9 @@ function Stories() {
             <p className="topic">Running Free</p>
             <p className="name">by Michelle</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item waves">
@@ -124,7 +144,9 @@ function Stories() {
             <p className="topic">Behind the Waves</p>
             <p className="name">by Lamarr Wilson</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item waters">
@@ -133,7 +155,9 @@ function Stories() {
             <p className="topic">Calm Waters</p>
             <p className="name">by Samantha Brooke</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item milky">
@@ -142,7 +166,9 @@ function Stories() {
             <p className="topic">The Milky Way</p>
             <p className="name">by Benjamin Cruz</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item forest">
@@ -151,7 +177,9 @@ function Stories() {
             <p className="topic">Night at The Dark Forest</p>
             <p className="name">by Mohammed Abdul</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item beauty">
@@ -160,7 +188,9 @@ function Stories() {
             <p className="topic">Somwarpet’s Beauty</p>
             <p className="name">by Michelle</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
 
         <div className="gallery-item dreams">
@@ -169,7 +199,9 @@ function Stories() {
             <p className="topic">Land of Dreams</p>
             <p className="name">by William Malcolm</p>
           </div>
-          <button className="stories-btn">Read Story</button>
+          <button className="stories-btn">
+            Read Story <img src={arrow} alt="proba" />
+          </button>
         </div>
       </div>
 
