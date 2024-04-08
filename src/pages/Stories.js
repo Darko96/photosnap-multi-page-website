@@ -22,7 +22,7 @@ function Stories() {
       </div>
 
       <div className="section-stories-gallery">
-        <div className="moutains">
+        <div className="mountains">
           <div>
             <p>April 16th 2020</p>
             <p>The Mountains</p>

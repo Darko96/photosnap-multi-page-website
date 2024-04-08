@@ -190,10 +190,7 @@ p {
 }
 
 .section-stories-list div {
-  /* width: 25%; */
-  height: auto;
   color: var(--white);
-
   width: 100%;
 }
 
@@ -305,7 +302,18 @@ p {
   grid-column: 4/5;
 }
 
-/*  */
+/* section-stories-banner */
+
+.section-stories-banner {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 144rem;
+  background: url("./assets/stories/desktop/moon-of-appalacia.jpg");
+  background-size: cover;
+  padding-top: 25%;
+}
+
+/* section-stories-gallery */
 
 .section-stories-gallery {
   width: 100%;
@@ -315,22 +323,28 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-stories-gallery div {
-  height: auto;
-  color: var(--white);
   width: 25%;
+  color: var(--white);
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  background-size: cover;
-  padding-top: 16.5%;
-  padding-left: 4rem;
+  padding-top: 17.2%;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+}
+
+.section-stories-gallery div div {
+  width: 100%;
+}
+
+.section-stories-gallery div button {
+  display: block;
+  margin-left: 2rem;
 }
 
 .tour {
@@ -351,6 +365,10 @@ p {
 
 .sea {
   background: url("./assets/stories/desktop/rage-of-the-sea.jpg");
+}
+
+.running {
+  background: url("./assets/stories/desktop/running-free.jpg");
 }
 
 .waves {
