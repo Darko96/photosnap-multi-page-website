@@ -3,6 +3,7 @@
 :root {
   --pure-black: #000;
   --light-grey: #dfdfdf;
+  --very-light-grey: #f5f4f5;
   --white: #fff;
 }
 
@@ -141,6 +142,7 @@ p {
   letter-spacing: 0.4rem;
 
   margin-bottom: 2.1rem;
+  text-transform: uppercase;
 }
 
 .section-create-text p {
@@ -173,9 +175,10 @@ p {
   width: 60%;
 }
 
-.section-create-img img {
-  width: 100%;
-  min-height: 100%;
+.create-img {
+  background: url("./assets/home/desktop/create-and-share.jpg");
+  background-size: cover;
+  padding-top: 100%;
 }
 
 /* section-stories */
@@ -190,9 +193,11 @@ p {
   width: 60%;
 }
 
-.section-stories-img img {
+.stories-img {
+  background: url("./assets/home/desktop/beautiful-stories.jpg");
+  background-size: cover;
   width: 100%;
-  min-height: 100%;
+  padding-top: 70%;
 }
 
 .section-stories-text {
@@ -294,9 +299,11 @@ p {
   width: 60%;
 }
 
-.section-design-img img {
+.design-img {
+  background: url("./assets/home/desktop/designed-for-everyone.jpg");
+  background-size: cover;
   width: 100%;
-  min-height: 100%;
+  padding-top: 70%;
 }
 
 /* section-stories-list */
@@ -658,7 +665,7 @@ p {
 
 .gallery-item .gallery-text {
   width: 90%;
-  border-bottom: 0.1rem solid var(--white);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.25);
 
   padding-left: 0;
   margin-bottom: 2rem;
@@ -796,9 +803,11 @@ p {
   width: 60%;
 }
 
-.features-banner-img img {
+.banner-img {
+  background: url("./assets/features/desktop/hero.jpg");
+  background-size: cover;
   width: 100%;
-  min-height: 100%;
+  padding-top: 70%;
 }
 
 .section-invite {
@@ -877,13 +886,29 @@ p {
   padding: 0 11rem;
 }
 
+.pricing-banner-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 2.1rem;
+}
+
+.pricing-banner-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
 .pricing-banner-img {
   width: 60%;
 }
 
-.pricing-banner-img img {
+.banner-img {
+  background: url("./assets/pricing/desktop/hero.jpg");
+  background-size: cover;
   width: 100%;
-  min-height: 100%;
+  padding-top: 70%;
 }
 
 .section-pricing {
@@ -904,21 +929,169 @@ p {
 
 .pricing-box {
   display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
 .pricing-basic {
+  background-color: var(--very-light-grey);
+  padding: 5.6rem 4rem 4rem 4rem;
+}
+
+.pricing-basic h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-basic h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-basic p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  opacity: 0.6;
+
+  margin-bottom: 4rem;
+}
+
+.pricing-basic button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background-color: var(--pure-black);
+  border: none;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+
+  padding: 1.2rem 0;
+  width: 100%;
+
+  cursor: pointer;
 }
 
 .pricing-pro {
+  background-color: var(--pure-black);
+  color: var(--white);
+  padding: 8.8rem 4rem 7.1rem 4rem;
+}
+
+.pricing-pro h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-pro h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-pro p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  opacity: 0.6;
+
+  margin-bottom: 4rem;
+}
+
+.pricing-pro button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: none;
+  color: var(--pure-black);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+
+  padding: 1.2rem 0;
+  width: 100%;
+
+  cursor: pointer;
 }
 
 .pricing-business {
+  background-color: var(--very-light-grey);
+  padding: 5.6rem 4rem 4rem 4rem;
 }
+
+.pricing-business h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-business h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.pricing-business p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  opacity: 0.6;
+
+  margin-bottom: 4rem;
+}
+
+.pricing-business button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  text-transform: uppercase;
+  background-color: var(--pure-black);
+  border: none;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+
+  padding: 1.2rem 0;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+/* compare */
 
 .section-compare {
   width: 100%;
   margin: 0 auto;
   max-width: 73rem;
+
+  margin-bottom: 16rem;
 }
 
 .section-compare div {
@@ -927,7 +1100,417 @@ p {
   justify-content: flex-start;
 }
 
+.compare-categories {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  padding-left: 2.4rem;
+  padding-bottom: 2.3rem;
+  border-bottom: 0.1rem solid var(--pure-black);
+}
+
 .compare-heading {
   text-align: center;
   margin-bottom: 5.6rem;
+  text-align: center;
+}
+
+.column-one {
+  width: 40%;
+}
+
+.column-two {
+  width: 20%;
+}
+
+.column-three {
+  width: 20%;
+}
+
+.compare-item {
+  border-bottom: 0.1rem solid var(--light-grey);
+  text-align: center;
+
+  padding-left: 2.4rem;
+}
+
+.compare-item .item-name {
+  width: 42%;
+}
+
+.compare-item div {
+  padding: 2.3rem 0;
+}
+
+.check-one {
+  width: 18.5%;
+}
+
+.check-two {
+  width: 22%;
+}
+
+.check-three {
+  width: 15%;
+}
+
+/* ******************************* tablet ******************************* */
+
+@media (max-width: 800px) {
+  .section-create-text {
+    width: 65%;
+
+    padding: 0 5.4rem;
+  }
+
+  .section-create-img {
+    width: 35%;
+  }
+
+  .create-img {
+    background: url("./assets/home/tablet/create-and-share.jpg");
+    background-size: cover;
+    padding-top: 242%;
+  }
+
+  /* section-stories */
+
+  .section-stories-img {
+    width: 35%;
+  }
+
+  .stories-img {
+    background: url("./assets/home/tablet/beautiful-stories.jpg");
+    background-size: cover;
+    padding-top: 250%;
+  }
+
+  .section-stories-text {
+    width: 65%;
+    padding: 0 5.4rem;
+  }
+
+  /* section-design */
+
+  .section-design-text {
+    width: 65%;
+    padding: 0 5.4rem;
+  }
+
+  .section-design-img {
+    width: 35%;
+  }
+
+  .design-img {
+    background: url("./assets/home/tablet/designed-for-everyone.jpg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 250%;
+  }
+
+  /* section-stories-list */
+
+  .section-stories-list {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 144rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .storie-item {
+    color: var(--white);
+    width: 50%;
+
+    padding-bottom: 4rem;
+  }
+
+  .mountains {
+    background: url("./assets/stories/desktop/mountains.jpg");
+    background-size: cover;
+    padding-top: 50%;
+    padding-left: 4rem;
+  }
+
+  .cityscapes {
+    background: url("./assets/stories/desktop/cityscapes.jpg");
+    background-size: cover;
+    padding-top: 50%;
+    padding-left: 4rem;
+  }
+
+  .voyage {
+    background: url("./assets/stories/desktop/18-days-voyage.jpg");
+    background-size: cover;
+    padding-top: 50%;
+    padding-left: 4rem;
+  }
+
+  .architecturals {
+    background: url("./assets/stories/desktop/architecturals.jpg");
+    background-size: cover;
+    padding-top: 50%;
+    padding-left: 4rem;
+  }
+
+  /* section-features */
+
+  .section-features {
+    width: 65%;
+
+    color: var(--pure-black);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle img {
+    margin-bottom: 6.6rem;
+  }
+
+  .feature p {
+    margin-bottom: 8rem;
+  }
+
+  /* footer */
+
+  .footer-container {
+    display: grid;
+    align-content: flex-start;
+    justify-items: flex-end;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 20% 18% 20% 37.3%;
+    row-gap: 2.2rem;
+  }
+
+  .footer-logo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .footer-links {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .footer-social {
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    justify-self: flex-start;
+  }
+
+  .footer-social ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+  }
+
+  .footer-invite {
+    grid-row: 1/2;
+    grid-column: 4/5;
+
+    justify-self: flex-end;
+  }
+
+  .footer-copyright {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+
+  /* section-stories-banner */
+
+  .section-stories-banner {
+    background: url("./assets/stories/tablet/moon-of-appalacia.jpg");
+    padding-top: 25%;
+  }
+
+  /* section-stories-gallery */
+
+  .section-stories-gallery div {
+    width: 50%;
+    padding-top: 29%;
+    padding-left: 4.2rem;
+  }
+
+  .tour {
+    background: url("./assets/stories/desktop/world-tour.jpg");
+    background-size: cover;
+  }
+
+  .corners {
+    background: url("./assets/stories/desktop/unforeseen-corners.jpg");
+    background-size: cover;
+  }
+
+  .africa {
+    background: url("./assets/stories/desktop/king-on-africa.jpg");
+    background-size: cover;
+  }
+
+  .nowhere {
+    background: url("./assets/stories/desktop/trip-to-nowhere.jpg");
+    background-size: cover;
+  }
+
+  .sea {
+    background: url("./assets/stories/desktop/rage-of-the-sea.jpg");
+    background-size: cover;
+  }
+
+  .running {
+    background: url("./assets/stories/desktop/running-free.jpg");
+    background-size: cover;
+  }
+
+  .waves {
+    background: url("./assets/stories/desktop/behind-the-waves.jpg");
+    background-size: cover;
+  }
+
+  .waters {
+    background: url("./assets/stories/desktop/calm-waters.jpg");
+    background-size: cover;
+  }
+
+  .milky {
+    background: url("./assets/stories/desktop/milky-way.jpg");
+    background-size: cover;
+  }
+
+  .forest {
+    background: url("./assets/stories/desktop/dark-forest.jpg");
+    background-size: cover;
+  }
+
+  .beauty {
+    background: url("./assets/stories/desktop/somwarpet.jpg");
+    background-size: cover;
+  }
+
+  .dreams {
+    background: url("./assets/stories/desktop/land-of-dreams.jpg");
+    background-size: cover;
+  }
+
+  /* features */
+
+  .section-features {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .row-one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-banner-text {
+    width: 65%;
+
+    padding: 0 5.4rem;
+  }
+
+  .features-banner-img {
+    width: 35%;
+  }
+
+  .banner-img {
+    background: url("./assets/features/tablet/hero.jpg");
+    background-size: cover;
+    padding-top: 182%;
+  }
+
+  .section-invite {
+    background: url("./assets/shared/tablet/bg-beta.jpg");
+    background-size: cover;
+  }
+
+  .section-invite-heading {
+    width: 50%;
+  }
+
+  /* pricing */
+
+  .pricing-banner-text {
+    width: 65%;
+    padding: 0 5.4rem;
+  }
+
+  .pricing-banner-img {
+    width: 35%;
+  }
+
+  .pr-banner-img {
+    background: url("./assets/pricing/tablet/hero.jpg");
+    background-size: cover;
+    padding-top: 178%;
+  }
+
+  .section-pricing {
+    text-align: start;
+
+    margin-bottom: 11rem;
+  }
+
+  .monthly-yearly-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  .pricing-basic {
+    padding: 4rem 4.8rem 4rem 4rem;
+  }
+
+  .pricing-basic button,
+  .pricing-basic p {
+    width: 50%;
+  }
+
+  .pricing-pro {
+    padding: 4rem 4.8rem 4rem 4rem;
+  }
+
+  .pricing-pro button,
+  .pricing-pro p {
+    width: 50%;
+  }
+
+  .pricing-business {
+    padding: 4rem 4.8rem 4rem 4rem;
+  }
+
+  .pricing-business button,
+  .pricing-business p {
+    width: 50%;
+  }
+
+  /* compare */
+
+  .section-compare {
+    margin-bottom: 11rem;
+  }
 }

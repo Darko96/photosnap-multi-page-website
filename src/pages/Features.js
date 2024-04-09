@@ -26,7 +26,7 @@ function Features() {
           </p>
         </div>
         <div className="features-banner-img">
-          <img src={featuresKV} alt="proba"></img>
+          <div className="banner-img"></div>
         </div>
       </div>
 

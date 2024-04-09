@@ -11,16 +11,15 @@ function Pricing() {
 
       <div className="pricing-banner">
         <div className="pricing-banner-text">
-          <h1> Create and share your photo Stories.</h1>
+          <h1>Pricing</h1>
           <p>
-            Photosnap is a platform for photographers and visual storytellers.
-            We make it easy to share photos, tell stories and connect with
-            others.
+            Create a your stories, Photosnap is a platform for photographers and
+            visual storytellers. It’s the simple way to create and share your
+            photos.
           </p>
-          <button>Get an ivnite</button>
         </div>
         <div className="pricing-banner-img">
-          <img src={pricingKv} alt="proba"></img>
+          <div className="pr-banner-img"></div>
         </div>
       </div>
 
@@ -39,10 +38,10 @@ function Pricing() {
               aspiring photographers.
             </p>
             <h2>$19.00 </h2>
-            <h2>$190.00 </h2>
+            {/* <h2>$190.00 </h2> */}
             <p>per month</p>
-            <p>per year</p>
-            <button></button>
+            {/* <p>per year</p> */}
+            <button>Pick Plan</button>
           </div>
 
           <div className="pricing-pro">
@@ -52,22 +51,22 @@ function Pricing() {
               veterans and professionals.
             </p>
             <h2>$39.00</h2>
-            <h2>$390.00</h2>
+            {/* <h2>$390.00</h2> */}
             <p>per month</p>
-            <p>per year</p>
+            {/* <p>per year</p> */}
             <button>Pick Plan</button>
           </div>
 
           <div className="pricing-business">
             <h1>Business</h1>
             <p>
-              More advanced features available. Recommended for photography
-              veterans and professionals.
+              Additional features available such as more detailed metrics.
+              Recommended for business owners.
             </p>
-            <h2>$39.00</h2>
-            <h2>$390.00</h2>
+            <h2>$99.00</h2>
+            {/* <h2>$990.00</h2> */}
             <p>per month</p>
-            <p>per year</p>
+            {/* <p>per year</p> */}
             <button>Pick Plan</button>
           </div>
         </div>
@@ -75,93 +74,93 @@ function Pricing() {
 
       <div className="section-compare">
         <h1 className="compare-heading">Compare</h1>
-        <div>
-          <div>The Features</div>
-          <div>Basic</div>
-          <div>Pro</div>
-          <div>Business</div>
+        <div className="compare-categories">
+          <div className="column-one">The Features</div>
+          <div className="column-two">Basic</div>
+          <div className="column-three">Pro</div>
+          <div className="column-four">Business</div>
         </div>
 
-        <div>
-          <div>Unlimited Story Posting</div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Unlimited Story Posting</div>
+          <div className="check-one">
             <img src={check} alt="proba" />
           </div>
-          <div>
+          <div className="check-two">
             <img src={check} alt="proba" />
           </div>
-          <div>
-            <img src={check} alt="proba" />
-          </div>
-        </div>
-
-        <div>
-          <div>Unlimited Photo Upload</div>
-          <div>
-            <img src={check} alt="proba" />
-          </div>
-          <div>
-            <img src={check} alt="proba" />
-          </div>
-          <div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>
 
-        <div>
-          <div>Embedding Custom Content</div>
-          <div></div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Unlimited Photo Upload</div>
+          <div className="check-one">
             <img src={check} alt="proba" />
           </div>
-          <div>
+          <div className="check-two">
             <img src={check} alt="proba" />
           </div>
-        </div>
-
-        <div>
-          <div>Customize Metadata</div>
-          <div></div>
-          <div>
-            <img src={check} alt="proba" />
-          </div>
-          <div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>
 
-        <div>
-          <div>Advanced Metrics</div>
-          <div></div>
-          <div></div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Embedding Custom Content</div>
+          <div className="check-one"></div>
+          <div className="check-two">
+            <img src={check} alt="proba" />
+          </div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>
 
-        <div>
-          <div>Photo Downloads</div>
-          <div></div>
-          <div></div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Customize Metadata</div>
+          <div className="check-one"></div>
+          <div className="check-two">
+            <img src={check} alt="proba" />
+          </div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>
 
-        <div>
-          <div>Search Engine Indexing</div>
-          <div></div>
-          <div></div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Advanced Metrics</div>
+          <div className="check-one"></div>
+          <div className="check-two"></div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>
 
-        <div>
-          <div>Custom Analytics</div>
-          <div></div>
-          <div></div>
-          <div>
+        <div className="compare-item">
+          <div className="item-name">Photo Downloads</div>
+          <div className="check-one"></div>
+          <div className="check-two"></div>
+          <div className="check-three">
+            <img src={check} alt="proba" />
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Search Engine Indexing</div>
+          <div className="check-one"></div>
+          <div className="check-two"></div>
+          <div className="check-three">
+            <img src={check} alt="proba" />
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Custom Analytics</div>
+          <div className="check-one"></div>
+          <div className="check-two"></div>
+          <div className="check-three">
             <img src={check} alt="proba" />
           </div>
         </div>

@@ -29,13 +29,13 @@ function Homepage() {
           </button>
         </div>
         <div className="section-create-img">
-          <img src={desktopCreate} alt="proba"></img>
+          <div className="create-img"></div>
         </div>
       </div>
 
       <div className="section-stories">
         <div className="section-stories-img">
-          <img src={desktopStories} alt="proba"></img>
+          <div className="stories-img"></div>
         </div>
         <div className="section-stories-text">
           <h1>Beautiful stories every time</h1>
@@ -63,7 +63,7 @@ function Homepage() {
           </button>
         </div>
         <div className="section-design-img">
-          <img src={desktopDesign} alt="proba"></img>
+          <div className="design-img"></div>
         </div>
       </div>
 
