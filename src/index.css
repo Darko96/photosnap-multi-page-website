@@ -84,6 +84,10 @@ p {
   padding: 1.6rem;
 }
 
+.visible {
+  display: none;
+}
+
 .nav-list {
   list-style: none;
 
@@ -390,7 +394,7 @@ p {
 /* section-features */
 
 .section-features {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   max-width: 111rem;
 
@@ -584,6 +588,7 @@ p {
   letter-spacing: 0.4rem;
 
   margin-bottom: 1.6rem;
+  text-transform: uppercase;
 }
 
 .below-stories-heading {
@@ -791,6 +796,7 @@ p {
   letter-spacing: 0.4rem;
 
   margin-bottom: 2.1rem;
+  text-transform: uppercase;
 }
 
 .features-banner-text p {
@@ -892,6 +898,7 @@ p {
   letter-spacing: 0.4rem;
 
   margin-bottom: 2.1rem;
+  text-transform: uppercase;
 }
 
 .pricing-banner-text p {
@@ -904,7 +911,7 @@ p {
   width: 60%;
 }
 
-.banner-img {
+.pr-banner-img {
   background: url("./assets/pricing/desktop/hero.jpg");
   background-size: cover;
   width: 100%;
@@ -1153,6 +1160,10 @@ p {
 
 .check-three {
   width: 15%;
+}
+
+.mobile {
+  display: none;
 }
 
 /* ******************************* tablet ******************************* */
@@ -1512,5 +1523,653 @@ p {
 
   .section-compare {
     margin-bottom: 11rem;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 500px) {
+  /* navigation */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    text-align: center;
+  }
+
+  .logo-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2.4rem;
+  }
+
+  .menu-btn {
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list {
+    width: 80%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #979797;
+  }
+
+  .nav-list li {
+    font-size: 1.5rem;
+  }
+
+  .nav-btn {
+    width: 80%;
+    font-size: 1.5em;
+    padding: 1.4rem 0;
+
+    margin: 2rem 0 3.2rem 0;
+  }
+
+  .visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* main banner */
+
+  .section-create {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-create-text {
+    width: 100%;
+    padding: 7.2rem 2.4rem 7.2rem 3.3rem;
+  }
+
+  .section-create-text h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .section-create-text p {
+    margin-bottom: 2.3rem;
+  }
+
+  .section-create-img {
+    width: 100%;
+  }
+
+  .create-img {
+    background: url("./assets/home/mobile/create-and-share.jpg");
+    background-size: cover;
+    padding-top: 78%;
+  }
+
+  /* section-stories */
+
+  .section-stories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-stories-img {
+    width: 100%;
+  }
+
+  .stories-img {
+    background: url("./assets/home/mobile/beautiful-stories.jpg");
+    background-size: cover;
+    padding-top: 72%;
+  }
+
+  .section-stories-text {
+    width: 100%;
+    padding: 7.2rem 2.4rem 7.2rem 3.3rem;
+  }
+
+  .section-stories-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .section-stories-text p {
+    margin-bottom: 2.3rem;
+  }
+
+  /* section-design */
+
+  .section-design {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    max-width: 144rem;
+  }
+
+  .section-design-text {
+    width: 100%;
+    padding: 7.2rem 2.4rem 7.2rem 3.3rem;
+  }
+
+  .section-design-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .section-design-text p {
+    margin-bottom: 2.3rem;
+  }
+
+  .section-design-img {
+    width: 100%;
+  }
+
+  .design-img {
+    background: url("./assets/home/mobile/designed-for-everyone.jpg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 72%;
+  }
+
+  /* section-stories-list */
+
+  .section-stories-list {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 144rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .storie-item {
+    color: var(--white);
+    width: 100%;
+
+    padding-bottom: 4rem;
+  }
+
+  .stories-text {
+    margin-bottom: 1.6rem;
+  }
+
+  .mountains {
+    background: url("./assets/stories/mobile/mountains.jpg");
+    background-size: cover;
+    padding-top: 62%;
+  }
+
+  .cityscapes {
+    background: url("./assets/stories/mobile/cityscapes.jpg");
+    background-size: cover;
+    padding-top: 62%;
+  }
+
+  .voyage {
+    background: url("./assets/stories/mobile/18-days-voyage.jpg");
+    background-size: cover;
+    padding-top: 62%;
+  }
+
+  .architecturals {
+    background: url("./assets/stories/mobile/architecturals.jpg");
+    background-size: cover;
+    padding-top: 62%;
+  }
+
+  /* section-features */
+
+  .section-features {
+    width: 80%;
+    padding: 8rem 0;
+
+    color: var(--pure-black);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-one,
+  .row-two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .middle img {
+    margin-bottom: 6.6rem;
+  }
+
+  .feature p {
+    font-size: 1.5rem;
+    margin-bottom: 5.6rem;
+  }
+
+  /* footer */
+  .footer {
+    background-color: var(--pure-black);
+    color: var(--white);
+
+    padding: 5.6rem 3.2rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 3.2rem;
+  }
+
+  .footer-links {
+    margin-bottom: 4.9rem;
+  }
+
+  .footer-social {
+    margin-bottom: 11rem;
+  }
+
+  .footer-social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+  }
+
+  .footer-invite button {
+    margin-bottom: 3.4rem;
+  }
+
+  /* section-stories-banner */
+
+  .section-stories-banner {
+    background: url("./assets/stories/mobile/moon-of-appalacia.jpg");
+    background-size: cover;
+    padding-top: 25%;
+    padding-bottom: 4.8rem 2.8rem;
+  }
+
+  .section-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .stories-above-heading {
+    margin-bottom: 1.6rem;
+  }
+
+  .stories-heading {
+    font-size: 3.2rem;
+  }
+
+  /* section-stories-gallery */
+
+  .section-stories-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    color: var(--white);
+    width: 100%;
+    padding-bottom: 4rem;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .topic {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-bottom: 0.4rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .gallery-item .gallery-text {
+    margin-bottom: 2rem;
+  }
+
+  .section-stories-gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .section-stories-gallery div {
+    width: 100%;
+
+    padding-top: 25%;
+    padding-left: 4.1rem;
+  }
+
+  .tour {
+    background: url("./assets/stories/mobile/world-tour.jpg");
+    background-size: cover;
+  }
+
+  .corners {
+    background: url("./assets/stories/mobile/unforeseen-corners.jpg");
+    background-size: cover;
+  }
+
+  .africa {
+    background: url("./assets/stories/mobile/king-on-africa.jpg");
+    background-size: cover;
+  }
+
+  .nowhere {
+    background: url("./assets/stories/mobile/trip-to-nowhere.jpg");
+    background-size: cover;
+  }
+
+  .sea {
+    background: url("./assets/stories/mobile/rage-of-the-sea.jpg");
+    background-size: cover;
+  }
+
+  .running {
+    background: url("./assets/stories/mobile/running-free.jpg");
+    background-size: cover;
+  }
+
+  .waves {
+    background: url("./assets/stories/mobile/behind-the-waves.jpg");
+    background-size: cover;
+  }
+
+  .waters {
+    background: url("./assets/stories/mobile/calm-waters.jpg");
+    background-size: cover;
+  }
+
+  .milky {
+    background: url("./assets/stories/mobile/milky-way.jpg");
+    background-size: cover;
+  }
+
+  .forest {
+    background: url("./assets/stories/mobile/dark-forest.jpg");
+    background-size: cover;
+  }
+
+  .beauty {
+    background: url("./assets/stories/mobile/somwarpet.jpg");
+    background-size: cover;
+  }
+
+  .dreams {
+    background: url("./assets/stories/mobile/land-of-dreams.jpg");
+    background-size: cover;
+  }
+
+  /* features */
+
+  .features-banner {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 auto;
+    max-width: 144rem;
+  }
+
+  .features-banner-text {
+    width: 100%;
+    padding: 7.2rem 2.8rem;
+  }
+
+  .features-banner-text h1 {
+    font-size: 3.2rem;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .features-banner-text p {
+    font-size: 1.5rem;
+  }
+
+  .features-banner-img {
+    width: 100%;
+  }
+
+  .banner-img {
+    background: url("./assets/features/mobile/hero.jpg");
+    background-size: cover;
+    padding-top: 78%;
+  }
+
+  .section-invite {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 144rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6.8rem 0;
+
+    background: url("./assets/shared/desktop/bg-beta.jpg");
+    background-size: cover;
+
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0.6rem;
+    border-style: solid;
+    border-image: linear-gradient(
+      13deg,
+      rgba(255, 197, 147, 1) 79%,
+      rgba(188, 113, 152, 1) 59%,
+      rgba(90, 119, 255, 1) 67%
+    );
+    border-image-slice: 1;
+  }
+
+  .section-invite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 6.4rem 3.2rem;
+  }
+
+  .section-invite-heading {
+    font-size: 3.2rem;
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+
+  /* pricing */
+
+  .pricing-banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 6.4rem;
+  }
+
+  .pricing-banner-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 7.2rem 2.8rem;
+  }
+
+  .pricing-banner-text h1 {
+    font-size: 3.2rem;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .pricing-banner-img {
+    width: 100%;
+  }
+
+  .pr-banner-img {
+    background: url("./assets/pricing/mobile/hero.jpg");
+    background-size: cover;
+    padding-top: 78%;
+  }
+
+  .section-pricing {
+    width: 90%;
+    text-align: center;
+
+    margin-bottom: 6.4rem;
+  }
+
+  .monthly-yearly-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pricing-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .pricing-basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.6rem 2.1rem 4rem 2.1rem;
+  }
+
+  .pricing-basic p {
+    width: 90%;
+  }
+
+  .pricing-basic button {
+    width: 83%;
+  }
+
+  .pricing-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.8rem 2.1rem 4.8rem 2.1rem;
+  }
+
+  .pricing-pro p {
+    width: 90%;
+  }
+
+  .pricing-pro button {
+    width: 83%;
+  }
+
+  .pricing-business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.6rem 2.1rem 4rem 2.1rem;
+  }
+
+  .pricing-business p {
+    width: 90%;
+  }
+
+  .pricing-business button {
+    width: 83%;
+  }
+
+  /* compare */
+
+  .section-compare {
+    width: 90%;
+    margin-bottom: 6.4rem;
+  }
+
+  .compare-categories {
+    gap: 0%;
+    border-bottom: none;
+    margin-bottom: 0.8rem;
+  }
+
+  .compare-heading {
+    font-size: 1.2rem;
+  }
+
+  .compare-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: none;
+    text-align: center;
+
+    padding-left: 0;
+  }
+
+  .compare-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    text-align: start;
+    border-bottom: 0.1rem solid var(--pure-black);
+    text-transform: uppercase;
+  }
+
+  .compare-item .item-name {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .compare-item div {
+    width: 100%;
+    padding: 0;
+  }
+
+  .compare-item {
+    padding: 2.3rem 0 2.4rem 0;
+    border-bottom: 0.1rem solid var(--light-grey);
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }

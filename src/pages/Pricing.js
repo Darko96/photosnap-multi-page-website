@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import PageNav from "../components/PageNav";
 // images
-import pricingKv from "../assets/pricing/desktop/hero.jpg";
 import check from "../assets/pricing/desktop/check.svg";
 
 function Pricing() {
@@ -72,7 +71,8 @@ function Pricing() {
         </div>
       </div>
 
-      <div className="section-compare">
+      {/* Desktop and Tablet */}
+      <div className="desktop section-compare">
         <h1 className="compare-heading">Compare</h1>
         <div className="compare-categories">
           <div className="column-one">The Features</div>
@@ -162,6 +162,166 @@ function Pricing() {
           <div className="check-two"></div>
           <div className="check-three">
             <img src={check} alt="proba" />
+          </div>
+        </div>
+      </div>
+      {/* Mobile */}
+      <div className="mobile section-compare">
+        <h1 className="compare-heading">The Features</h1>
+
+        <div className="compare-item">
+          <div className="item-name">Unlimited Story Posting</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-two">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Unlimited Photo Upload</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-two">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Embedding Custom Content</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Customize Metadata</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two">
+              <img src={check} alt="proba" />
+            </div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Advanced Metrics</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two"></div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Photo Downloads</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two"></div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Search Engine Indexing</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two"></div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
+          </div>
+        </div>
+
+        <div className="compare-item">
+          <div className="item-name">Custom Analytics</div>
+
+          <div className="compare-categories">
+            <div className="column-two">Basic</div>
+            <div className="column-three">Pro</div>
+            <div className="column-four">Business</div>
+          </div>
+
+          <div className="checkmarks">
+            <div className="check-one"></div>
+            <div className="check-two"></div>
+            <div className="check-three">
+              <img src={check} alt="proba" />
+            </div>
           </div>
         </div>
       </div>
